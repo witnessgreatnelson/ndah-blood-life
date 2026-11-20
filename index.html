@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NDAH Blood Life (TM) — Save Life, Donate Blood | All Nigeria</title>
+<meta name="description" content="NDAH Blood Life (TM) by NDAH Foundation (TM) — Find blood donors in all 36 States + FCT Abuja.">
+<meta name="theme-color" content="#B91C1C">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:#FFF7F7;color:#111827;line-height:1.6}
+.topbar{background:#111827;color:#fff;font-size:12px;padding:8px 14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar b{color:#FCA5A5}
+header{background:linear-gradient(135deg,#7F1D1D,#B91C1C 55%,#DC2626);color:#fff;padding:30px 16px;text-align:center}
+header h1{margin:10px 0 6px;font-size:36px;line-height:1}
+header h1 span{color:#FDE68A}
+header p{max-width:700px;margin:8px auto}
+.btn{border:0;border-radius:999px;padding:13px 20px;font-weight:800;cursor:pointer;font-size:15px}
+.btn-white{background:#fff;color:#B91C1C}.btn-dark{background:#111827;color:#fff}.btn-red{background:#DC2626;color:#fff}.btn-green{background:#059669;color:#fff}.btn-blue{background:#2563EB;color:#fff}.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
+.wrap{max-width:880px;margin:auto;padding:14px}
+.card{background:#fff;border-radius:20px;padding:20px;margin:14px 0;box-shadow:0 10px 30px rgba(0,0,0,.07);border:1px solid #FEE2E2}
+.card h2{margin:0 0 8px;font-size:22px}.muted{color:#6B7280;font-size:14px}
+.kpi{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px}@media(max-width:650px){.kpi{grid-template-columns:1fr 1fr}}
+.kpi div{background:#FEF2F2;border-radius:16px;padding:14px;text-align:center}.kpi b{font-size:24px;display:block;color:#B91C1C}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:650px){.grid{grid-template-columns:1fr}}
+input,select{width:100%;padding:13px;border:1px solid #E5E7EB;border-radius:12px;margin:8px 0;font-size:15px;background:#fff}
+label{font-weight:700;font-size:13px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}.tab{flex:1;padding:12px;border-radius:999px;border:1px solid #E5E7EB;background:#fff;font-weight:800;cursor:pointer}.tab.active{background:#B91C1C;color:#fff}
+.role{border:2px solid #E5E7EB;border-radius:16px;padding:14px;cursor:pointer}.role.selected{border-color:#B91C1C;background:#FEF2F2}.role.selected-blue{border-color:#2563EB!important;background:#EFF6FF!important}
+.ok,.warn,.danger,.info{padding:13px;border-radius:14px;margin-top:12px;white-space:pre-wrap}.ok{background:#DCFCE7;border-left:5px solid #059669}.warn{background:#FEF9C3;border-left:5px solid #EAB308}.danger{background:#FEE2E2;border-left:5px solid #DC2626}.info{background:#E0F2FE;border-left:5px solid #0284C7}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{border:1px solid #F3F4F6;padding:9px;text-align:left}th{background:#B91C1C;color:#fff}
+.person{border:1px solid #EFEFEF;border-radius:16px;padding:13px;margin:10px 0;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.pill{background:#DC2626;color:#fff;padding:6px 11px;border-radius:999px;font-weight:800;font-size:13px}.pill-blue{background:#2563EB;color:#fff;padding:6px 11px;border-radius:999px;font-weight:800;font-size:13px}
+.wa{display:block;text-align:center;background:#16A34A;color:#fff;padding:15px;border-radius:999px;text-decoration:none;font-weight:800;margin-top:12px}
+.small{font-size:12px;color:#6B7280}
+.badge-line{display:inline-block;background:#FEF2F2;border:1px solid #FECACA;color:#991B1B;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}
+.step{background:#F9FAFB;border-radius:16px;padding:14px}.step b{font-size:28px;color:#B91C1C}
+.testi{background:#FFFBEB;border:1px solid #FDE68A;border-radius:16px;padding:14px}
+footer{background:#0B1220;color:#E5E7EB;padding:26px 16px;text-align:center;font-size:13px;line-height:1.7}
+footer a{color:#fff}
+.legal{background:#111827;color:#CBD5E1;padding:14px;border-radius:12px;font-size:12px;line-height:1.6;margin-top:12px}
+.sticky{position:sticky;bottom:0;background:rgba(255,255,255,.95);padding:10px;border-top:1px solid #FEE2E2;display:flex;gap:8px;justify-content:center;z-index:10}
+</style>
+</head>
+<body>
+<div class="topbar"><span>🩸 <b>NDAH Blood Life (TM)</b> • NDAH Foundation (TM)</span><span>📍 All 36 States + FCT Abuja • Blood is FREE</span></div>
+<header>
+<div style="font-size:13px;letter-spacing:.15em;font-weight:900;background:rgba(255,255,255,.18);display:inline-block;padding:7px 12px;border-radius:999px">NDAH FOUNDATION (TM) • ALL NIGERIA</div>
+<h1>NDAH Blood Life (TM)<br><span>Save Life. Donate Blood.</span></h1>
+<p><b>One donation can save up to 3 lives.</b> From Lagos to Kano, Enugu to Sokoto — mothers, children, accident victims are waiting. You can be their miracle — like Utibe.</p>
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px">
+<button class="btn btn-white" onclick="scrollToId('need')">🆘 I Need Blood</button>
+<button class="btn btn-dark" onclick="scrollToId('join')">❤️ Join as Donor / Supporter</button>
+<button class="btn btn-outline" onclick="scrollToId('find')">🔍 Find Donors</button>
+</div>
+</header>
+<div class="wrap">
+<div class="card">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap"><h2>🌍 Our Impact — Live Counter</h2><span class="badge-line">All Nigeria • Cloud + Local</span></div>
+<div class="kpi">
+<div><b id="kpiDonors">12</b><span class="muted">Donors 🩸</span></div>
+<div><b id="kpiSupporters">3</b><span class="muted">Supporters 🤝</span></div>
+<div><b id="kpiLives">36</b><span class="muted">Lives Saved ❤️</span></div>
+<div><b>36 + FCT</b><span class="muted">States Covered</span></div>
+</div>
+<p class="muted" id="cloudStatus">☁️ Cloud: Connecting to your Google Sheet...</p>
+</div>
+
+<div class="card" style="text-align:center">
+<h2>What do you need today?</h2>
+<div class="tabs"><button class="tab active" onclick="scrollToId('need')">🆘 I Need Blood</button><button class="tab" onclick="scrollToId('join')">❤️ I Want To Join</button><button class="tab" onclick="scrollToId('find')">🔍 Find Donors</button></div>
+<p class="muted">Works in every state — Lagos, Kano, Rivers, Enugu, Kaduna, Abuja, and all others.</p>
+</div>
+
+<div class="card" id="need">
+<h2>🆘 I Need Blood — Urgent Request — All Nigeria</h2>
+<p class="muted">Pick your State first, then your LGA will change automatically. Blood is FREE — never pay anybody for blood.</p>
+<div class="grid"><div><label>State *</label><select id="needState" onchange="updateLGA('needState','needLga')"></select></div><div><label>LGA / Area *</label><select id="needLga"></select></div></div>
+<label>Blood Group Needed *</label><select id="needGroup"><option>O+</option><option>O-</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>I don't know</option></select>
+<label>How Many Units?</label><select id="needUnits"><option>1 unit</option><option>2 units</option><option>3 units</option><option>4+ units — Emergency</option></select>
+<input id="needHospital" placeholder="Hospital Name, e.g. General Hospital, Ikeja / AKTH Kano / UNTH Enugu">
+<input id="needName" placeholder="Patient Name">
+<input id="needPhone" placeholder="Your Phone / WhatsApp, e.g. 0806 622 7211">
+<select id="needUrgency"><option>🔴 Very Urgent — Today / Now</option><option>🟡 Urgent — Within 24 hrs</option><option>🟢 Planned — This Week (Surgery)</option></select>
+<button class="btn btn-red" style="width:100%" onclick="requestBlood()">Create Request + Share on WhatsApp ➜</button>
+<div id="needResult"></div>
+</div>
+
+<div class="card" id="join">
+<h2>❤️ Join NDAH Blood Life (TM) — Donor OR Supporter</h2>
+<p class="muted">Choose Donor or Supporter. Then pick your State → LGA.</p>
+<div class="grid">
+<div class="role selected" id="boxDonor" onclick="selectRole('donor')"><b>🩸 I Want To Donate Blood</b><br><span class="muted">I am 18-65, 50kg+, healthy.</span><br><span class="pill" style="margin-top:8px;display:inline-block">DONOR</span></div>
+<div class="role" id="boxSupporter" onclick="selectRole('supporter')"><b>🤝 I Cannot Donate, But I Want To Help</b><br><span class="muted">Supporter / Ambassador.</span><br><span class="pill-blue" style="margin-top:8px;display:inline-block">SUPPORTER</span></div>
+</div>
+<input id="joinName" placeholder="Full Name *">
+<div class="grid"><div><label>State *</label><select id="joinState" onchange="updateLGA('joinState','joinLga')"></select></div><div><label>LGA *</label><select id="joinLga"></select></div></div>
+<div class="grid"><div id="bloodGroupWrap"><label>Your Blood Group *</label><select id="joinGroup"><option>O+</option><option>O-</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>I don't know — I want to test</option></select></div><div><label>Phone / WhatsApp *</label><input id="joinPhone" placeholder="Phone / WhatsApp *"></div></div>
+<div id="supporterWrap" style="display:none"><label>How do you want to help?</label><select id="supporterHow"><option>📣 Share App & Find Donors (Ambassador)</option><option>🏫 Organise Blood Drive in My Church / School / Mosque</option><option>💰 Donate Money to Support NDAH</option><option>🙏 Pray, Encourage & Support Donors</option></select></div>
+<div id="donorWrap"><select id="joinAvail"><option>✅ I am available NOW — call me</option><option>📅 Available This Week</option><option>📅 Available Anytime — I'm a regular donor</option></select></div>
+<label><input type="checkbox" id="joinAgree" style="width:auto"> I agree NDAH Foundation (TM) can contact me when somebody needs blood in my area.</label>
+<button class="btn btn-green" style="width:100%" id="joinBtn" onclick="registerJoin()">Register Me As Donor — I Want To Save Life ➜</button>
+<div id="joinResult"></div>
+</div>
+
+<div class="card" id="find">
+<h2>🔍 Find Donors & Supporters — All Nigeria</h2>
+<div class="grid"><div><label>State</label><select id="searchState" onchange="updateLGA('searchState','searchLga',true)"></select></div><div><label>LGA</label><select id="searchLga"><option>All LGAs</option></select></div></div>
+<div class="grid"><div><label>Blood Group</label><select id="searchGroup"><option>All</option><option>O+</option><option>O-</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option></select></div><div><label style="opacity:0">Search</label><button class="btn btn-dark" style="width:100%;margin:8px 0" onclick="searchDonors()">Search ➜</button></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-dark" onclick="filterList('all')">Show All</button><button class="btn btn-red" onclick="filterList('donor')">Donors Only 🩸</button><button class="btn btn-blue" onclick="filterList('supporter')">Supporters Only 🤝</button></div>
+<div id="donorList"></div>
+<div id="counts" class="muted" style="margin-top:10px"></div>
+</div>
+
+<div class="card"><h2>✅ Are You Eligible? — 1-Minute Checker</h2>
+<label>Age</label><select id="elAge"><option>18-65 years — Good</option><option>Under 18</option><option>Over 65</option></select>
+<label>Weight</label><select id="elWeight"><option>50kg and above — Good</option><option>Below 50kg</option></select>
+<label>Last Donation</label><select id="elLast"><option>Never donated / Over 4 months ago</option><option>Less than 3 months ago</option></select>
+<label>Do you feel sick now?</label><select id="elSick"><option>No, I feel well</option><option>Yes, I feel sick</option></select>
+<label>Pregnant / Breastfeeding?</label><select id="elPreg"><option>No</option><option>Yes — Pregnant</option><option>Yes — Breastfeeding (baby under 1 year)</option></select>
+<button class="btn btn-dark" style="width:100%" onclick="checkEligibility()">Check If I Can Donate ➜</button><div id="elResult"></div></div>
+
+<div class="card"><h2>🩸 Blood Compatibility</h2>
+<table><tr><th>Your Group</th><th>You Can GIVE To</th><th>You Can RECEIVE From</th></tr>
+<tr><td><b>O-</b> ⭐ Rarest</td><td>Everyone</td><td>O- only</td></tr>
+<tr><td><b>O+</b></td><td>O+, A+, B+, AB+</td><td>O+, O-</td></tr>
+<tr><td><b>A-</b></td><td>A+, A-, AB+, AB-</td><td>A-, O-</td></tr>
+<tr><td><b>A+</b></td><td>A+, AB+</td><td>A+, A-, O+, O-</td></tr>
+<tr><td><b>B-</b></td><td>B+, B-, AB+, AB-</td><td>B-, O-</td></tr>
+<tr><td><b>B+</b></td><td>B+, AB+</td><td>B+, B-, O+, O-</td></tr>
+<tr><td><b>AB-</b></td><td>AB+, AB-</td><td>AB-, A-, B-, O-</td></tr>
+<tr><td><b>AB+</b></td><td>AB+ only</td><td>Everyone</td></tr></table></div>
+
+<div class="card"><h2>💬 Real Stories</h2><div class="grid"><div class="testi"><b>“I thought I was just donating blood.”</b><br><span class="muted">“Two weeks later, NDAH told me my blood saved a mother in Ibeju-Lekki. I am now a regular donor.” — Adaeze, O+ Donor, Lagos</span></div><div class="testi"><b>“I cannot donate, but I shared the app.”</b><br><span class="muted">“I registered as Supporter. I shared to my church in Enugu, and 3 people donated.” — Pastor James, Supporter, Enugu</span></div></div></div>
+
+<div class="grid"><div class="card"><h2>❓ Don't Know Your Blood Group?</h2><div class="info"><b>Easy! 3 steps:</b><br>1. Go to any lab / hospital / pharmacy in your state<br>2. Say: “I want blood group test”<br>3. Cost ₦1,000 - ₦3,000, 10 minutes, result for life.</div></div>
+<div class="card"><h2>🏥 Blood Banks — All Nigeria</h2><div class="ok">🏥 <b>Lagos State Blood Transfusion Service</b><br>General Hospital Lagos</div><div class="ok">🏥 <b>National Blood Service Commission</b><br>Abuja + State Centres</div><div class="ok">🏥 <b>Teaching Hospitals</b><br>LUTH (Lagos), UCH (Ibadan), UNTH (Enugu), AKTH (Kano), UBTH (Benin), OAUTHC (Ife)</div></div></div>
+
+<div class="card"><h2>🧠 Myths vs Truth</h2><div class="grid"><div class="warn"><b>Myth:</b> “If I donate, I go weak”<br><b>Truth:</b> Body replaces fluid in 24 hrs.</div><div class="warn"><b>Myth:</b> “My blood go finish”<br><b>Truth:</b> You donate only 450ml — 1 bottle of water. Body has 5 litres.</div><div class="warn"><b>Myth:</b> “Donation na for money”<br><b>Truth:</b> Real donation is FREE.</div><div class="warn"><b>Myth:</b> “Only men fit donate”<br><b>Truth:</b> Women fit donate too.</div></div></div>
+
+<div class="card" style="text-align:center;background:#FEF2F2"><h2>💛 Support NDAH Foundation (TM)</h2><p class="muted">Blood is FREE for patients. But running the app costs money.</p><a class="wa" href="https://wa.me/2348066227211?text=Hello%20NDAH%2C%20I%20want%20to%20support%20Blood%20Life" target="_blank" style="background:#111827">💛 I Want To Support NDAH</a></div>
+<a class="wa" href="https://wa.me/2348066227211?text=Hello%20NDAH%20Blood%20Life%2C%20I%20need%20blood%20or%20I%20want%20to%20join" target="_blank">💬 Emergency? Chat NDAH on WhatsApp — 0806 622 7211</a>
+<p style="text-align:center">Email: witnessgreatnelson@gmail.com<br>Also see: NDAH Health UT (TM): https://ndah-health-ut.netlify.app</p>
+</div>
+
+<div class="sticky"><button class="btn btn-red" onclick="scrollToId('need')">🆘 Need Blood</button><button class="btn btn-green" onclick="scrollToId('join')">❤️ Join Now</button><button class="btn btn-dark" onclick="scrollToId('find')">🔍 Find Donors</button></div>
+
+<footer>
+<b style="font-size:16px;color:#fff">NDAH Blood Life (TM) • NDAH Foundation (TM) • UT Miracle (TM)</b><br>
+Built in Lagos, Nigeria by <b>Nelson Elemi</b> — Founder, NDAH Foundation (TM) — Serving All 36 States + FCT Abuja<br>
+<b>(C) 2026 NDAH Foundation (TM). All Rights Reserved.</b><br>
+Do not copy, reproduce, redistribute without written permission.<br>
+<a href="https://ndah-foundation.netlify.app">ndah-foundation.netlify.app</a> • WhatsApp: 0806 622 7211 • Email: witnessgreatnelson@gmail.com
+<div class="legal"><b>Privacy & Terms:</b> We only collect name, blood group, State, LGA, phone to connect you in emergency. We do NOT sell your data. Patients contact NDAH first, NDAH contacts you.<br><br><b>Medical Disclaimer:</b> Education + donor connection only. All transfusions must be done in hospital by qualified workers with screening + cross-matching. Never buy or sell blood.<br><br><b>Trademark:</b> NDAH Blood Life (TM), NDAH Foundation (TM), NDAH Health UT (TM), UT Miracle (TM) are trademarks of NDAH Foundation (TM).</div>
+<p style="font-size:12px;opacity:.7">Version 4.1 — All Nigeria + Cloud Edition • (C) 2026</p>
+</footer>
+
+<script>
+// YOUR CLOUD LINK — ALREADY INSIDE
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbyTZZtZ_kv074EtLJTO_fnuR4_QWVKkcOhBusmfA3m2Y2S5oJwc5JzqygzsW7tyPRES/exec";
+
+const NIGERIA = {
+"Abia": ["Aba North","Aba South","Arochukwu","Bende","Ikwuano","Isiala Ngwa North","Isiala Ngwa South","Isuikwuato","Obi Ngwa","Ohafia","Osisioma","Ugwunagbo","Ukwa East","Ukwa West","Umuahia North","Umuahia South","Umu Nneochi"],
+"Adamawa": ["Demsa","Fufore","Ganye","Girei","Gombi","Guyuk","Hong","Jada","Lamurde","Madagali","Maiha","Mayo Belwa","Michika","Mubi North","Mubi South","Numan","Shelleng","Song","Toungo","Yola North","Yola South"],
+"Akwa Ibom": ["Abak","Eastern Obolo","Eket","Esit Eket","Essien Udim","Etim Ekpo","Etinan","Ibeno","Ibesikpo Asutan","Ibiono Ibom","Ika","Ikono","Ikot Abasi","Ikot Ekpene","Ini","Itu","Mbo","Mkpat Enin","Nsit Atai","Nsit Ibom","Nsit Ubium","Obot Akara","Okobo","Onna","Oron","Oruk Anam","Udung Uko","Ukanafun","Uruan","Urue Offong/Oruko","Uyo"],
+"Anambra": ["Aguata","Anambra East","Anambra West","Anaocha","Awka North","Awka South","Ayamelum","Dunukofia","Ekwusigo","Idemili North","Idemili South","Ihiala","Njikoka","Nnewi North","Nnewi South","Ogbaru","Onitsha North","Onitsha South","Orumba North","Orumba South","Oyi"],
+"Bauchi": ["Alkaleri","Bauchi","Bogoro","Damban","Darazo","Dass","Gamawa","Ganjuwa","Giade","Itas/Gadau","Jama'are","Katagum","Kirfi","Misau","Ningi","Shira","Tafawa Balewa","Toro","Warji","Zaki"],
+"Bayelsa": ["Brass","Ekeremor","Kolokuma/Opokuma","Nembe","Ogbia","Sagbama","Southern Ijaw","Yenagoa"],
+"Benue": ["Ado","Agatu","Apa","Buruku","Gboko","Guma","Gwer East","Gwer West","Katsina-Ala","Konshisha","Kwande","Logo","Makurdi","Obi","Ogbadibo","Ohimini","Oju","Okpokwu","Otukpo","Tarka","Ukum","Ushongo","Vandeikya"],
+"Borno": ["Abadam","Askira/Uba","Bama","Bayo","Biu","Chibok","Damboa","Dikwa","Gubio","Guzamala","Gwoza","Hawul","Jere","Kaga","Kala/Balge","Konduga","Kukawa","Kwaya Kusar","Mafa","Magumeri","Maiduguri","Marte","Mobbar","Monguno","Ngala","Nganzai","Shani"],
+"Cross River": ["Abi","Akamkpa","Akpabuyo","Bakassi","Bekwarra","Biase","Boki","Calabar Municipal","Calabar South","Etung","Ikom","Obanliku","Obubra","Obudu","Odukpani","Ogoja","Yakuur","Yala"],
+"Delta": ["Aniocha North","Aniocha South","Bomadi","Burutu","Ethiope East","Ethiope West","Ika North East","Ika South","Isoko North","Isoko South","Ndokwa East","Ndokwa West","Okpe","Oshimili North","Oshimili South","Patani","Sapele","Udu","Ughelli North","Ughelli South","Ukwuani","Uvwie","Warri North","Warri South","Warri South West"],
+"Ebonyi": ["Abakaliki","Afikpo North","Afikpo South","Ebonyi","Ezza North","Ezza South","Ikwo","Ishielu","Ivo","Izzi","Ohaozara","Ohaukwu","Onicha"],
+"Edo": ["Akoko-Edo","Egor","Esan Central","Esan North-East","Esan South-East","Esan West","Etsako Central","Etsako East","Etsako West","Igueben","Ikpoba Okha","Oredo","Orhionmwon","Ovia North-East","Ovia South-West","Owan East","Owan West","Uhunmwonde"],
+"Ekiti": ["Ado Ekiti","Efon","Ekiti East","Ekiti South-West","Ekiti West","Emure","Gbonyin","Ido Osi","Ijero","Ikere","Ikole","Ilejemeje","Irepodun/Ifelodun","Ise/Orun","Moba","Oye"],
+"Enugu": ["Aninri","Awgu","Enugu East","Enugu North","Enugu South","Ezeagu","Igbo Etiti","Igbo Eze North","Igbo Eze South","Isi Uzo","Nkanu East","Nkanu West","Nsukka","Oji River","Udenu","Udi","Uzo Uwani"],
+"FCT Abuja": ["Abaji","Bwari","Gwagwalada","Kuje","Kwali","Municipal Area Council"],
+"Gombe": ["Akko","Balanga","Billiri","Dukku","Funakaye","Gombe","Kaltungo","Kwami","Nafada","Shongom","Yamaltu/Deba"],
+"Imo": ["Aboh Mbaise","Ahiazu Mbaise","Ehime Mbano","Ezinihitte","Ideato North","Ideato South","Ihitte/Uboma","Ikeduru","Isiala Mbano","Isu","Mbaitoli","Ngor Okpala","Njaba","Nkwerre","Nwangele","Obowo","Oguta","Ohaji/Egbema","Okigwe","Onuimo","Orlu","Orsu","Oru East","Oru West","Owerri Municipal","Owerri North","Owerri West"],
+"Jigawa": ["Auyo","Babura","Biriniwa","Birnin Kudu","Buji","Dutse","Gagarawa","Garki","Gumel","Guri","Gwaram","Gwiwa","Hadejia","Jahun","Kafin Hausa","Kazaure","Kiri Kasama","Kiyawa","Kaugama","Maigatari","Malam Madori","Miga","Ringim","Roni","Sule Tankarkar","Taura","Yankwashi"],
+"Kaduna": ["Birnin Gwari","Chikun","Giwa","Igabi","Ikara","Jaba","Jema'a","Kachia","Kaduna North","Kaduna South","Kagarko","Kajuru","Kaura","Kauru","Kubau","Kudan","Lere","Makarfi","Sabon Gari","Sanga","Soba","Zangon Kataf","Zaria"],
+"Kano": ["Ajingi","Albasu","Bagwai","Bebeji","Bichi","Bunkure","Dala","Dambatta","Dawakin Kudu","Dawakin Tofa","Doguwa","Fagge","Gabasawa","Garko","Garun Mallam","Gaya","Gezawa","Gwale","Gwarzo","Kabo","Kano Municipal","Karaye","Kibiya","Kiru","Kumbotso","Kunchi","Kura","Madobi","Makoda","Minjibir","Nasarawa","Rano","Rimin Gado","Rogo","Shanono","Sumaila","Takai","Tarauni","Tofa","Tsanyawa","Tudun Wada","Ungogo","Warawa","Wudil"],
+"Katsina": ["Bakori","Batagarawa","Batsari","Baure","Bindawa","Charanchi","Dan Musa","Dandume","Danja","Daura","Dutsi","Dutsin Ma","Faskari","Funtua","Ingawa","Jibia","Kafur","Kaita","Kankara","Kankia","Katsina","Kurfi","Kusada","Mai'Adua","Malumfashi","Mani","Mashi","Matazu","Musawa","Rimi","Sabuwa","Safana","Sandamu","Zango"],
+"Kebbi": ["Aleiro","Arewa Dandi","Argungu","Augie","Bagudo","Birnin Kebbi","Bunza","Dandi","Fakai","Gwandu","Jega","Kalgo","Koko/Besse","Maiyama","Ngaski","Sakaba","Shanga","Suru","Wasagu/Danko","Yauri","Zuru"],
+"Kogi": ["Adavi","Ajaokuta","Ankpa","Bassa","Dekina","Ibaji","Idah","Igalamela Odolu","Ijumu","Kabba/Bunu","Kogi","Lokoja","Mopa Muro","Ofu","Ogori/Magongo","Okehi","Okene","Olamaboro","Omala","Yagba East","Yagba West"],
+"Kwara": ["Asa","Baruten","Edu","Ekiti","Ifelodun","Ilorin East","Ilorin South","Ilorin West","Irepodun","Isin","Kaiama","Moro","Offa","Oke Ero","Oyun","Pategi"],
+"Lagos": ["Agege","Ajeromi-Ifelodun","Alimosho","Amuwo-Odofin","Apapa","Badagry","Epe","Eti Osa","Ibeju-Lekki","Ifako-Ijaiye","Ikeja","Ikorodu","Kosofe","Lagos Island","Lagos Mainland","Mushin","Ojo","Oshodi-Isolo","Shomolu","Surulere"],
+"Nasarawa": ["Akwanga","Awe","Doma","Karu","Keana","Keffi","Kokona","Lafia","Nasarawa","Nasarawa Egon","Obi","Toto","Wamba"],
+"Niger": ["Agaie","Agwara","Bida","Borgu","Bosso","Chanchaga","Edati","Gbako","Gurara","Katcha","Kontagora","Lapai","Lavun","Magama","Mariga","Mashegu","Mokwa","Munya","Paikoro","Rafi","Rijau","Shiroro","Suleja","Tafa","Wushishi"],
+"Ogun": ["Abeokuta North","Abeokuta South","Ado-Odo/Ota","Egbado North","Egbado South","Ewekoro","Ifo","Ijebu East","Ijebu North","Ijebu North East","Ijebu Ode","Ikenne","Imeko Afon","Ipokia","Obafemi Owode","Odeda","Odogbolu","Ogun Waterside","Remo North","Sagamu"],
+"Ondo": ["Akoko North-East","Akoko North-West","Akoko South-West","Akoko South-East","Akure North","Akure South","Ese Odo","Idanre","Ifedore","Ilaje","Ile Oluji/Okeigbo","Irele","Odigbo","Okitipupa","Ondo East","Ondo West","Ose","Owo"],
+"Osun": ["Atakunmosa East","Atakunmosa West","Aiyedaade","Aiyedire","Boluwaduro","Boripe","Ede North","Ede South","Egbedore","Ejigbo","Ife Central","Ife East","Ife North","Ife South","Ifedayo","Ifelodun","Ila","Ilesa East","Ilesa West","Irepodun","Irewole","Isokan","Iwo","Obokun","Odo Otin","Ola Oluwa","Olorunda","Oriade","Orolu","Osogbo"],
+"Oyo": ["Afijio","Akinyele","Atiba","Atisbo","Egbeda","Ibadan North","Ibadan North-East","Ibadan North-West","Ibadan South-East","Ibadan South-West","Ibarapa Central","Ibarapa East","Ibarapa North","Ido","Irepo","Iseyin","Itesiwaju","Iwajowa","Kajola","Lagelu","Ogbomosho North","Ogbomosho South","Ogo Oluwa","Olorunsogo","Ona Ara","Oorelope","Ori Ire","Oyo","Oyo East","Saki East","Saki West","Surulere"],
+"Plateau": ["Barkin Ladi","Bassa","Bokkos","Jos East","Jos North","Jos South","Kanam","Kanke","Langtang North","Langtang South","Mangu","Mikang","Pankshin","Qua'an Pan","Riyom","Shendam","Wase"],
+"Rivers": ["Abua/Odual","Ahoada East","Ahoada West","Akuku-Toru","Andoni","Asari-Toru","Bonny","Degema","Eleme","Emuoha","Etche","Gokana","Ikwerre","Khana","Obio/Akpor","Ogba/Egbema/Ndoni","Ogu/Bolo","Okrika","Omuma","Opobo/Nkoro","Oyigbo","Port Harcourt","Tai"],
+"Sokoto": ["Binji","Bodinga","Dange Shuni","Gada","Goronyo","Gudu","Gwadabawa","Illela","Isa","Kebbe","Kware","Rabah","Sabon Birni","Shagari","Silame","Sokoto North","Sokoto South","Tambuwal","Tangaza","Tureta","Wamako","Wurno","Yabo"],
+"Taraba": ["Ardo Kola","Bali","Donga","Gashaka","Gassol","Ibi","Jalingo","Karim Lamido","Kumi","Lau","Sardauna","Takum","Ussa","Wukari","Yorro","Zing"],
+"Yobe": ["Bade","Bursari","Damaturu","Fika","Fune","Geidam","Gujba","Gulani","Jakusko","Karasuwa","Machina","Nangere","Nguru","Potiskum","Tarmuwa","Yunusari","Yusufari"],
+"Zamfara": ["Anka","Bakura","Birnin Magaji/Kiyaw","Bukkuyum","Bungudu","Gummi","Gusau","Kaura Namoda","Maradun","Maru","Shinkafi","Talata Mafara","Tsafe","Zurmi"]
+};
+
+let currentRole='donor'; let currentFilter='all';
+let defaultPeople=[
+{name:"Adaeze O.",group:"O+",state:"Lagos",lga:"Ibeju-Lekki",phone:"0803-XXX-1234",avail:"Available NOW",role:"donor"},
+{name:"Tunde B.",group:"O-",state:"Lagos",lga:"Ikeja",phone:"0805-XXX-5678",avail:"Available This Week",role:"donor"},
+{name:"Chiamaka N.",group:"A+",state:"Enugu",lga:"Enugu North",phone:"0806-XXX-9012",avail:"Available NOW",role:"donor"},
+{name:"Ibrahim M.",group:"B+",state:"Kano",lga:"Kano Municipal",phone:"0810-XXX-3456",avail:"Available Anytime",role:"donor"},
+{name:"Funke A.",group:"AB+",state:"Oyo",lga:"Ibadan North",phone:"0902-XXX-7890",avail:"Available This Week",role:"donor"},
+{name:"Emeka E.",group:"O+",state:"Rivers",lga:"Port Harcourt",phone:"0803-XXX-2345",avail:"Available NOW",role:"donor"},
+{name:"Hauwa S.",group:"A-",state:"Kaduna",lga:"Zaria",phone:"0705-XXX-6789",avail:"Available Anytime",role:"donor"},
+{name:"Blessing U.",group:"O+",state:"Anambra",lga:"Awka South",phone:"0803-XXX-1111",avail:"Available NOW",role:"donor"},
+{name:"Musa A.",group:"B-",state:"Sokoto",lga:"Sokoto North",phone:"0812-XXX-2222",avail:"Available This Week",role:"donor"},
+{name:"Grace E.",group:"O-",state:"Cross River",lga:"Calabar South",phone:"0703-XXX-3333",avail:"Available Anytime",role:"donor"},
+{name:"Pastor James",group:"—",state:"Enugu",lga:"Enugu North",phone:"Via NDAH WhatsApp",avail:"Organise Blood Drive in My Church",role:"supporter"},
+{name:"Mama Nkechi",group:"—",state:"Lagos",lga:"Lekki",phone:"Via NDAH WhatsApp",avail:"Share App & Find Donors (Ambassador)",role:"supporter"},
+{name:"Aisha B.",group:"—",state:"Kano",lga:"Nasarawa",phone:"Via NDAH WhatsApp",avail:"Share App & Find Donors (Ambassador)",role:"supporter"},
+{name:"Utibe — Miracle Baby",group:"O+",state:"Lagos",lga:"Ibeju-Lekki",phone:"Via NDAH WhatsApp",avail:"Inspiration — UT = Utibe = Miracle",role:"donor"}
+];
+let saved=JSON.parse(localStorage.getItem('ndah_bloodlife_people_v4')||"[]");
+let people=saved.length?saved:defaultPeople;
+function savePeople(){localStorage.setItem('ndah_bloodlife_people_v4',JSON.stringify(people));updateKPIs();}
+function updateKPIs(){let d=people.filter(p=>p.role==='donor').length;let s=people.filter(p=>p.role==='supporter').length;document.getElementById('kpiDonors').textContent=d;document.getElementById('kpiSupporters').textContent=s;document.getElementById('kpiLives').textContent=d*3;}
+function scrollToId(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function fillStates(){
+let states=Object.keys(NIGERIA).sort();
+['needState','joinState'].forEach(id=>{
+let sel=document.getElementById(id);
+sel.innerHTML=states.map(s=>'<option'+(s==='Lagos'?' selected':'')+'>'+s+'</option>').join('');
+});
+let searchSel=document.getElementById('searchState');
+searchSel.innerHTML='<option>All Nigeria</option>'+states.map(s=>'<option>'+s+'</option>').join('');
+updateLGA('needState','needLga'); updateLGA('joinState','joinLga'); updateLGA('searchState','searchLga',true);
+}
+function updateLGA(stateId,lgaId,isSearch){
+let state=document.getElementById(stateId).value;
+let lgaSel=document.getElementById(lgaId);
+if(!NIGERIA[state]){ if(isSearch){lgaSel.innerHTML='<option>All LGAs</option>';} return; }
+if(isSearch){ lgaSel.innerHTML='<option>All LGAs</option>'+NIGERIA[state].map(l=>'<option>'+l+'</option>').join(''); }
+else{ lgaSel.innerHTML=NIGERIA[state].map(l=>'<option>'+l+'</option>').join(''); }
+}
+function selectRole(role){
+currentRole=role;
+document.getElementById('boxDonor').classList.toggle('selected',role==='donor');
+document.getElementById('boxDonor').classList.remove('selected-blue');
+document.getElementById('boxSupporter').classList.toggle('selected',role==='supporter');
+document.getElementById('boxSupporter').classList.toggle('selected-blue',role==='supporter');
+document.getElementById('supporterWrap').style.display=role==='supporter'?'block':'none';
+document.getElementById('donorWrap').style.display=role==='donor'?'block':'none';
+document.getElementById('bloodGroupWrap').style.display=role==='donor'?'block':'none';
+let b=document.getElementById('joinBtn');
+b.textContent=role==='donor'?'Register Me As Donor — I Want To Save Life ➜':'Register Me As Supporter — I Want To Help ➜';
+b.className=role==='donor'?'btn btn-green':'btn btn-blue';
+}
+function renderPeople(list){
+let el=document.getElementById('donorList');
+let dc=people.filter(p=>p.role==='donor').length;let sc=people.filter(p=>p.role==='supporter').length;
+document.getElementById('counts').textContent="Total: "+people.length+" people — "+dc+" Donors 🩸 • "+sc+" Supporters 🤝 — All Nigeria";
+if(!list.length){el.innerHTML="<div class='warn'>No person found for this search yet in this State / LGA. Be the first to join here!</div>";return}
+el.innerHTML=list.map(d=>{
+let isDonor=d.role==='donor';
+let badge=isDonor?'<span class="pill">'+d.group+'</span>':'<span class="pill-blue">SUPPORTER 🤝</span>';
+let label=isDonor?d.group:d.avail;
+let loc=(d.state?d.state+", ":"")+(d.lga||"");
+return "<div class='person'><div><b>"+d.name+"</b><br><span class='muted'>"+loc+" • "+d.avail+"</span><br><span class='small'>📞 "+d.phone+"</span></div><div style='text-align:right'>"+badge+"<br><button class='btn "+(isDonor?'btn-green':'btn-blue')+"' style='margin-top:8px;padding:8px 12px' onclick=\"window.open('https://wa.me/2348066227211?text="+encodeURIComponent("Hello NDAH Blood Life, I need help in "+loc+". Please connect me to "+d.name+" ("+label+")")+"','_blank')\">Contact ➜</button></div></div>"
+}).join("");
+}
+function filterList(f){currentFilter=f;searchDonors();}
+function searchDonors(){
+let st=document.getElementById('searchState').value;let l=document.getElementById('searchLga').value;let g=document.getElementById('searchGroup').value;
+let filtered=people.filter(d=>{
+let okState=(st==="All Nigeria"||d.state===st);
+let okLga=(l==="All LGAs"||d.lga===l);
+let okGroup=(g==="All"||d.group===g||d.role==='supporter');
+let okFilter=(currentFilter==='all'||d.role===currentFilter);
+if(currentFilter==='supporter') okGroup=true;
+return okState&&okLga&&okGroup&&okFilter;
+});
+renderPeople(filtered);
+}
+async function saveToCloud(person){
+try{ await fetch(SHEET_URL,{method:"POST",mode:"no-cors",body:JSON.stringify(person),headers:{"Content-Type":"application/json"}}); }catch(e){}
+}
+async function loadFromCloud(){
+try{
+let res=await fetch(SHEET_URL);
+let data=await res.json();
+if(data && data.length){
+let cloudPeople=data.map(r=>({name:r.Name,group:r.BloodGroup,state:r.State,lga:r.LGA,phone:r.Phone,avail:r.Availability,role:(r.Role||"donor").toLowerCase()}));
+let all=[...cloudPeople,...people];
+let seen=new Set(); people=all.filter(p=>{let k=p.name+p.phone; if(seen.has(k)) return false; seen.add(k); return true;});
+document.getElementById('cloudStatus').textContent="☁️ Cloud: Connected — "+cloudPeople.length+" donors from Google Sheet (All Nigeria)";
+renderPeople(people); updateKPIs(); savePeople();
+}
+}catch(e){ document.getElementById('cloudStatus').textContent="☁️ Cloud: Offline — Showing saved donors on this device. Check network."; }
+}
+function registerJoin(){
+let name=document.getElementById('joinName').value.trim();
+let state=document.getElementById('joinState').value;
+let lga=document.getElementById('joinLga').value;
+let group=document.getElementById('joinGroup').value;
+let phone=document.getElementById('joinPhone').value.trim();
+let avail=document.getElementById('joinAvail').value;
+let supHow=document.getElementById('supporterHow').value;
+let agree=document.getElementById('joinAgree').checked;
+let el=document.getElementById('joinResult');
+if(!name||!phone){el.innerHTML="<div class='warn'>Please fill Name + Phone.</div>";return}
+if(!agree){el.innerHTML="<div class='warn'>Please tick the agree box so we can contact you in emergency.</div>";return}
+if(currentRole==='donor'){
+people.unshift({name:name,group:group,state:state,lga:lga,phone:phone,avail:avail,role:'donor'});
+el.innerHTML="<div class='ok'><b>🎉 Thank you, HERO! "+name+"!</b><br>You don register as <b>"+group+"</b> donor in <b>"+lga+", "+state+"</b>. Saved to Cloud + This Device.<br>NDAH go contact you on "+phone+".</div>";
+saveToCloud({name:name,group:group,state:state,lga:lga,phone:phone,avail:avail,role:"donor",supporterHow:""});
+}else{
+people.unshift({name:name,group:"—",state:state,lga:lga,phone:phone,avail:supHow,role:'supporter'});
+el.innerHTML="<div class='ok' style='background:#DBEAFE;border-left-color:#2563EB'><b>💙 Thank you, SUPPORTER! "+name+"!</b><br>You don register as <b>Supporter</b> in <b>"+lga+", "+state+"</b>. Saved to Cloud.<br>Your job: <b>"+supHow+"</b></div>";
+saveToCloud({name:name,group:"—",state:state,lga:lga,phone:phone,avail:supHow,role:"supporter",supporterHow:supHow});
+}
+document.getElementById('joinName').value="";document.getElementById('joinPhone').value="";
+savePeople(); searchDonors();
+}
+function requestBlood(){
+let st=document.getElementById('needState').value;let lga=document.getElementById('needLga').value;
+let g=document.getElementById('needGroup').value;let units=document.getElementById('needUnits').value;
+let hosp=document.getElementById('needHospital').value||"Not given";let name=document.getElementById('needName').value||"Patient";let phone=document.getElementById('needPhone').value||"No phone";let urg=document.getElementById('needUrgency').value;
+let el=document.getElementById('needResult');
+el.innerHTML="<div class='danger'><b>🆘 Request Created!</b><br><b>Need:</b> "+g+" • "+units+"<br><b>Where:</b> "+hosp+", "+lga+", "+st+"<br><b>Patient:</b> "+name+" • "+phone+"<br><b>Urgency:</b> "+urg+"</div>";
+let msg="🆘 BLOOD NEEDED - NDAH Blood Life (TM)\nBlood Group: "+g+"\nUnits: "+units+"\nHospital: "+hosp+"\nState: "+st+"\nLGA: "+lga+"\nPatient: "+name+"\nPhone: "+phone+"\nUrgency: "+urg+"\nPlease help, share!";
+window.open("https://wa.me/2348066227211?text="+encodeURIComponent(msg),"_blank");
+}
+function checkEligibility(){
+let age=document.getElementById('elAge').value;let weight=document.getElementById('elWeight').value;let last=document.getElementById('elLast').value;let sick=document.getElementById('elSick').value;let preg=document.getElementById('elPreg').value;
+let el=document.getElementById('elResult');
+if(age.includes("Under")||age.includes("Over")){el.innerHTML="<div class='danger'><b>Sorry, you no fit donate now.</b><br>Donors must be 18-65. But you CAN register as Supporter!</div>";return}
+if(weight.includes("Below")){el.innerHTML="<div class='warn'><b>You need 50kg and above.</b><br>You can still register as Supporter.</div>";return}
+if(last.includes("Less")){el.innerHTML="<div class='warn'><b>Wait a little.</b><br>You donated recently. Wait 3-4 months.</div>";return}
+if(sick.includes("Yes")){el.innerHTML="<div class='warn'><b>Rest first.</b><br>If you dey sick — no donate now.</div>";return}
+if(preg.includes("Yes")){el.innerHTML="<div class='warn'><b>No donate now, Mama.</b><br>Register as Supporter for now.</div>";return}
+el.innerHTML="<div class='ok'><b>✅ YES! You fit donate!</b><br>Based on your answers, you look eligible.<br><br><b>Next:</b> 1. Chop well, drink plenty water 2. Go to blood bank with ID 3. Tell them you want to donate</div>";
+}
+// START — This line was missing before, that's why State was empty
+fillStates(); renderPeople(people); updateKPIs(); loadFromCloud();
+</script>
+</body>
+</html>
